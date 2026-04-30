@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="#"></a>
+    <a class="navbar-brand" routerLink="#">Snoop</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,20 +10,21 @@
           <a class="nav-link active" aria-current="page" routerLink="/inicio">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" routerLink="/prods">Contacto</a>
+          <a class="nav-link active" routerLink="/contacto">Contacto</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" routerLink="prods" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Productos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" routerLink="#">Cat 1</a></li>
-            <li><a class="dropdown-item" routerLink="#">Cat 2</a></li>
+            <li><a class="dropdown-item" routerLink="prods/cat1">Cat 1</a></li>
+            <li><a class="dropdown-item" routerLink="prods/cat2">Cat 2</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" routerLink="#">Ofertas</a></li>
+            <li><a class="dropdown-item" routerLink="ofertas">Ofertas</a></li>
           </ul>
         </li>
       </ul>
+      <button class="btn btn-outline-dark me-2" routerLink="carro">Carrito</button>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Buscar</button>
