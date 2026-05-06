@@ -1,1 +1,16 @@
-<p>productos works!</p>
+@for(p of productos; track p.id){
+@if (p.disponible){
+<section class="container-fluid d-flex flex-wrap justify-content-center gap-4 mt-4">
+    <div class="card position-relative" style="width: 18rem;">
+        <img src="{{ p.imagen }}" class="card-img-top" alt="{{p.nombre}}">
+        <div class="card-body">
+            <h5 class="card-title">{{ p.nombre }}</h5>
+            <p class="card-text">{{ p.descripcion }}</p>
+            <p class="card-text">Precio: ${{ p.precio }}</p>
+            <button class="btn btn-primary mt-2">Agregar al Carrito</button>
+        </div>
+    </div>
+</section>
+}
+
+}
