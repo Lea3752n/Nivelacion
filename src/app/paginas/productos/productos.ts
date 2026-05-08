@@ -15,9 +15,12 @@ export class Productos {
       nombre: 'Air Max 90',
       descripcion: 'Zapatillas deportivas',
       precio: 25000,
+      precioOferta: 20000,
       stock: 5,
-      imagen: 'air-max-90.jpg',
+      imagen: 'assets/Vaso1_SB1.png',
+      imagenes: ['assets/Vaso1_SB1.png', 'assets/Vaso1_SB2.png', 'assets/Vaso1_SB3.png'], // Ejemplo de múltiples imágenes
       categoria: 'Deportes',
+      oferta: true,
       disponible: true
     },
     {
@@ -25,9 +28,11 @@ export class Productos {
       nombre: 'Camiseta Nike',
       descripcion: 'Camiseta de algodón',
       precio: 5000,
+      precioOferta: 4000,
       stock: 10,
       imagen: 'camiseta-nike.jpg',
       categoria: 'Ropa',
+      oferta: true,
       disponible: true
     },
     {   
@@ -35,9 +40,11 @@ export class Productos {
       nombre: 'Pantalón Adidas',
       descripcion: 'Pantalón deportivo',
       precio: 8000,
+      precioOferta: 6000,
       stock: 3,
       imagen: 'pantalon-adidas.jpg',
       categoria: 'Ropa',
+      oferta: true,
       disponible: false
     },   
     {
@@ -45,9 +52,11 @@ export class Productos {
       nombre: 'Gorra Puma',
       descripcion: 'Gorra de béisbol',
       precio: 3000,
+      precioOferta: 2500,
       stock: 7,
       imagen: 'gorra-puma.jpg',
       categoria: 'Accesorios',
+      oferta: true,
       disponible: true
     },
     {
@@ -55,9 +64,11 @@ export class Productos {
       nombre: 'Mochila Under Armour',
       descripcion: 'Mochila resistente al agua',
       precio: 12000,
+      precioOferta: 10000,  
       stock: 4,
       imagen: 'mochila-under-armour.jpg',
       categoria: 'Accesorios',
+      oferta: true,
       disponible: true
     },
     {
@@ -65,9 +76,11 @@ export class Productos {
       nombre: 'Zapatillas Reebok',
       descripcion: 'Zapatillas para correr',
       precio: 22000,
+      precioOferta: 18000,
       stock: 6,
       imagen: 'zapatillas-reebok.jpg',
       categoria: 'Deportes',
+      oferta: true,
       disponible: false
     }
   ]
