@@ -45,7 +45,7 @@ export class Productos {
       imagen: 'pantalon-adidas.jpg',
       categoria: 'Ropa',
       oferta: true,
-      disponible: false
+      disponible: true
     },   
     {
       id: 4,
@@ -81,7 +81,7 @@ export class Productos {
       imagen: 'zapatillas-reebok.jpg',
       categoria: 'Deportes',
       oferta: true,
-      disponible: false
+      disponible: true
     }
   ]
 
