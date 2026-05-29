@@ -18,8 +18,8 @@ export class Productos {
       precioOferta: 20000,
       stock: 5,
       imagen: 'assets/Vaso1_SB1.png',
-      imagenes: ['assets/Vaso1_SB1.png', 'assets/Vaso1_SB2.png', 'assets/Vaso1_SB3.png'], // Ejemplo de múltiples imágenes
-      categoria: 'Deportes',
+      imagen2: 'assets/Vaso1_SB2.png',
+      imagen3: 'assets/Vaso1_SB3.png',
       oferta: true,
       disponible: true
     },
@@ -31,7 +31,6 @@ export class Productos {
       precioOferta: 4000,
       stock: 10,
       imagen: 'camiseta-nike.jpg',
-      categoria: 'Ropa',
       oferta: true,
       disponible: true
     },
@@ -43,7 +42,6 @@ export class Productos {
       precioOferta: 6000,
       stock: 3,
       imagen: 'pantalon-adidas.jpg',
-      categoria: 'Ropa',
       oferta: true,
       disponible: true
     },   
@@ -55,7 +53,6 @@ export class Productos {
       precioOferta: 2500,
       stock: 7,
       imagen: 'gorra-puma.jpg',
-      categoria: 'Accesorios',
       oferta: true,
       disponible: true
     },
@@ -67,7 +64,6 @@ export class Productos {
       precioOferta: 10000,  
       stock: 4,
       imagen: 'mochila-under-armour.jpg',
-      categoria: 'Accesorios',
       oferta: true,
       disponible: true
     },
@@ -79,7 +75,6 @@ export class Productos {
       precioOferta: 18000,
       stock: 6,
       imagen: 'zapatillas-reebok.jpg',
-      categoria: 'Deportes',
       oferta: true,
       disponible: true
     }
