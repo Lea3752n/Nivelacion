@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg: #fbfaf6;
+  --surface: #ffffff;
+  --surface-soft: #f7f4ee;
+  --text: #111111;
+  --text-muted: #5a5a5a;
+  --border: #111111;
+  --accent-red: #d93f3f;
+  --accent-yellow: #ffd966;
+  --shadow: rgba(0, 0, 0, 0.12);
+  color-scheme: light;
+  color: var(--text);
+  background-color: var(--bg);
+  font-family: "Segoe UI", "Segoe Print", "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: linear-gradient(135deg, #fbfaf6 0%, #f1eadf 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.55;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(255, 217, 102, 0.35);
+  color: var(--text);
+}
+
+.paper-frame {
+  background: rgba(255, 255, 255, 0.94);
+  border: 2px dashed var(--border);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px var(--shadow);
+  padding: 1.5rem;
+}
+
+.sketch-heading {
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  color: var(--text);
+  letter-spacing: 0.03em;
+}
+
+.handwritten-label {
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+}
+

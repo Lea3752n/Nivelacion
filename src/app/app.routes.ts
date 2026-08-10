@@ -19,6 +19,7 @@ export const routes: Routes = [
     {path: 'favoritos', component: Favoritos},
     {path: 'sesion', component: InicioSesion},
     {path: 'registro', component: Registro},
+    {path: 'favs', component: Favoritos},
     {path: '**', redirectTo: 'inicio'}
 
 ];

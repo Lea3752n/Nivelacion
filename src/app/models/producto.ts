@@ -6,8 +6,7 @@ export interface Producto {
     precioOferta?: number; // Propiedad opcional
     stock: number;
     imagen: string;
-    imagenes?: string[]; // Propiedad opcional para múltiples imágenes
-    categoria: string;
+    imagenes?: string[]; // Propiedad opcional para un array de imágenes
     oferta?: boolean; // Propiedad opcional
     disponible?: boolean; // Propiedad opcional
 }
@@ -20,8 +19,7 @@ const p: Producto = {
     precioOferta: 20000,
     stock: 5,
     imagen: 'assets/Vaso1_SB1.png',
-    imagenes: ['assets/Vaso1_SB1.png', 'assets/Vaso2_SB1.png', 'assets/Vaso3_SB1.png'], // Ejemplo de múltiples imágenes
-    categoria: 'Deportes',
+    imagenes: ['assets/Vaso1_SB1.png', 'assets/Vaso2_SB1.png', 'assets/Vaso3_SB1.png'],
     oferta: true,
     disponible: true
 };

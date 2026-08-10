@@ -1,22 +1,84 @@
-<!-- Carrusel de imágenes -->
-<div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="3000">
-      <img src="/assets/Mesa10.png" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Mesa 10">
+<section id="inicio" class="inicio-section py-5">
+  <div class="inicio-overlay"></div>
+  <div class="container position-relative">
+    <div class="text-center mb-5">
+      <h1 class="display-4 fw-bold">Bienvenidos a Nuestra Tienda</h1>
+      <p class="lead text-muted mx-auto mt-3" style="max-width: 720px;">
+        Creemos que los pequeños detalles hacen la diferencia.
+      </p>
     </div>
-    <div class="carousel-item" data-bs-interval="3000">
-      <img src="/assets/Mesa11.png" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Mesa 11">
+
+    <div class="row g-4 mb-5 feature-row align-items-center">
+      <div class="col-lg-6">
+        <div class="content-card p-4 h-100">
+          <p>
+            Somos una tienda dedicada a ofrecer
+            productos inspirados en el universo de Snoopy y Peanuts, pensados para quienes crecieron con sus historias o
+            simplemente disfrutan de su estilo clásico y atemporal.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="assets/Inicio.png" class="img-fluid rounded-4 shadow-sm feature-img" alt="Snoopy">
+      </div>
     </div>
-    <div class="carousel-item" data-bs-interval="3000">
-      <img src="/assets/Mesa12.png" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Mesa 12">
+
+    <div class="row g-4 mb-5 feature-row align-items-center flex-column-reverse flex-lg-row">
+      <div class="col-lg-6 text-center">
+        <img src="assets/Inicio2.png" class="img-fluid rounded-4 shadow-sm feature-img" alt="Snoopy">
+      </div>
+      <div class="col-lg-6">
+        <div class="content-card p-4 h-100">
+          <p>
+            Encontrarás tazas, peluches, accesorios, artículos de papelería, decoración y mucho más, seleccionados para
+            combinar calidad, diseño y la esencia de uno de los personajes más queridos de todos los tiempos.
+          </p>
+        </div>
+      </div>
     </div>
+
+    <div class="row g-4 mb-5 feature-row align-items-center">
+      <div class="col-lg-6">
+        <div class="content-card p-4 h-100">
+          <p>
+            Nuestro objetivo es acercar un pedacito del mundo de Snoopy a cada hogar, ofreciendo una experiencia de
+            compra sencilla, segura y agradable.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="/assets/Snoopy3.png" class="img-fluid rounded-4 shadow-sm feature-img" alt="Snoopy">
+      </div>
+    </div>
+
+    <div class="section-block py-4 px-3 px-md-4 rounded-4 bg-white bg-opacity-90 shadow-sm">
+      <h2 class="text-center mb-4">Productos Destacados</h2>
+      <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-4 overflow-hidden">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="/assets/Mesa10.png" class="d-block w-100" alt="Mesa 10">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/assets/Mesa11.png" class="d-block w-100" alt="Mesa 11">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/assets/Mesa12.png" class="d-block w-100" alt="Mesa 12">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+
+    
+
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
-  </button>
-</div>
+
+</section>

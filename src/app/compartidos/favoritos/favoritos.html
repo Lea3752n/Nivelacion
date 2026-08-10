@@ -1,1 +1,52 @@
-<p>favoritos works!</p>
+<div class="container mt-4">
+    @if (favoritos.length === 0) {
+    <h3 class="mb-3">Favoritos</h3>
+    <!-- Mensaje por los favoritos vacíos -->
+    <div class="alert alert-info text-center">
+        <p class="mb-0">No tienes productos favoritos. ¡Agrega algunos!</p>
+    </div>
+    } @else {
+    <!-- Tabla de productos -->
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <!-- Encabezado de la tabla -->
+            <thead class="table-dark">
+                <tr>
+                    <th style="width: 80px;">Imagen</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <!-- Datos -->
+            <tbody>
+
+                @for (favorito of favoritos; track favorito.id) {
+                <tr>
+                    <td>
+                        <img src="{{ favorito.imagen }}" alt="" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+                    </td>
+                    <td class="fw-medium">{{ favorito.nombre }}</td>
+                    <td class="text-success fw-bold">
+                        <div class="price-container">
+                            @if (favorito.oferta) {
+                            <span class="text-decoration-line-through text-muted small">${{ favorito.precio }}</span>
+                            <span class="text-danger fw-bold fs-5">${{ favorito.precioOferta }}</span>
+                            } @else {
+                            <span class="text-dark fw-bold fs-5">${{ favorito.precio }}</span>
+                            }
+                        </div>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger text-light fw-bold">
+                            <i class="bi bi-trash-fill"></i>
+                        </button>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    }
+
+</div>

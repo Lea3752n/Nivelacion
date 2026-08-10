@@ -1,0 +1,61 @@
+#contact {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 28px;
+  padding: 3rem 1rem;
+  box-shadow: 0 20px 36px var(--shadow);
+  margin: 2rem auto;
+  max-width: 960px;
+}
+
+.contact-card {
+  background: var(--surface);
+  border: 2px dashed var(--border);
+  border-radius: 28px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  padding: 1.75rem;
+}
+
+.contact-card .ratio {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.section-title {
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  color: var(--text);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  border: 2px dashed var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: none;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 217, 102, 0.3);
+  border-color: var(--accent-yellow);
+}
+
+.btn-success {
+  background: var(--accent-dark);
+  border-color: var(--accent-yellow);
+  border-style: dashed;
+  color: #ffffff;
+}
+
+.btn-success:hover {
+  background: var(--accent-yellow);
+  color: var(--text);
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 4px;
+  margin-top: 0.75rem;
+}

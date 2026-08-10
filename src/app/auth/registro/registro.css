@@ -1,0 +1,37 @@
+#registro {
+  background: rgba(255, 255, 255, 0.96);
+  border: 2px dashed #111111;
+  border-radius: 28px;
+  padding: 3rem 1rem;
+  box-shadow: 0 20px 34px rgba(0, 0, 0, 0.14);
+  margin: 2rem auto;
+  max-width: 960px;
+}
+
+.section-title {
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  color: #111111;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-weight: 700;
+  color: #111111;
+}
+
+.form-control {
+  border: 2px dashed #111111;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.btn-success {
+  background: #111111;
+  border-color: #111111;
+  border-style: dashed;
+}
+
+.btn-success:hover {
+  background: #2b2b2b;
+}

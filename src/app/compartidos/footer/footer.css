@@ -1,4 +1,30 @@
-footer{
-    background-color: rgb(206, 206, 206);
-    
+footer {
+  background: #111111;
+  color: #f7f4ee;
+  border-top: 4px dashed var(--accent-yellow);
+  padding: 2rem 0;
+}
+
+footer a {
+  color: var(--accent-yellow);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent-red);
+}
+
+footer h5 {
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+footer .border-top {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+footer p,
+footer li {
+  color: rgba(247, 244, 238, 0.92);
 }
