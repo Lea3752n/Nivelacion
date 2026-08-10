@@ -1,10 +1,14 @@
 import { Injectable } from '@angular/core';
+<<<<<<< HEAD
 import { Producto } from '../models/producto';
+=======
+>>>>>>> ad4b14605c59deb741ba20463ef4e547f2a85a3b
 
 @Injectable({
   providedIn: 'root',
 })
 export class Prods {
+<<<<<<< HEAD
   /* Lista de productos */
   private productos: Producto[] = [
     {
@@ -163,4 +167,7 @@ export class Prods {
   }
 
 
+=======
+  
+>>>>>>> ad4b14605c59deb741ba20463ef4e547f2a85a3b
 }

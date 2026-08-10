@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class Favs {
   // Array para almacenar los productos favoritos
   private prodFavs: any[] = [];
+<<<<<<< HEAD
 
   // Agregar un producto a favoritos
   agregarProducto(producto: any) {
@@ -26,4 +27,11 @@ export class Favs {
   vaciar() {
     this.prodFavs = [];
   } 
+=======
+  
+  // Agregar un producto a favoritos
+  agregarFavorito(producto: any) {
+    this.prodFavs.push(producto);
+  }
+>>>>>>> ad4b14605c59deb741ba20463ef4e547f2a85a3b
 }

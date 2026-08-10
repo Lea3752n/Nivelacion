@@ -3,11 +3,19 @@
     @if (p.disponible){
 
     <div class="card position-relative" style="width: 18rem;">
+<<<<<<< HEAD
         @if (p.oferta) {
         <div class="position-absolute top-0 start-0 d-flex gap-1 p-2">
             <span class="badge bg-danger">OFERTA</span>
         </div>
         }
+=======
+        <div class="position-absolute top-0 start-0 d-flex gap-1 p-2">
+            <button class="btn btn-outline-danger">
+                <i class="bi bi-heart-fill"></i>
+            </button>
+        </div>
+>>>>>>> ad4b14605c59deb741ba20463ef4e547f2a85a3b
         <img src="{{ p.imagen }}" class="card-img-top" alt="{{p.nombre}}">
         <div class="card-body">
             <h5 class="card-title">{{ p.nombre }}</h5>
@@ -36,12 +44,17 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
+<<<<<<< HEAD
                             <h1 class="modal-title fs-5" [id]="'modalLabel-' + i">{{ p.nombre }}</h1>
+=======
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">{{ p.nombre }}</h1>
+>>>>>>> ad4b14605c59deb741ba20463ef4e547f2a85a3b
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
                         </div>
                         <div class="modal-body">
                             <!-- Carrusel -->
+<<<<<<< HEAD
                             <div [id]="'carousel-' + i" class="carousel slide">
                                 <div class="carousel-indicators text-dark">
                                     @for (imagen of p.imagenes; track $index) {
@@ -56,9 +69,31 @@
                                     @for (imagen of p.imagenes; track $index) {
                                     <div class="carousel-item" [class.active]="$index === 0">
                                         <img [src]="imagen" class="d-block w-100" alt="{{p.descripcion}}">
+=======
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators ">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="{{ p.imagen }}" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ p.imagen2 }}" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ p.imagen3 }}" class="d-block w-100" alt="...">
+>>>>>>> ad4b14605c59deb741ba20463ef4e547f2a85a3b
                                     </div>
                                     }
                                 </div>
+<<<<<<< HEAD
                                 <button class="carousel-control-prev" type="button"
                                     [attr.data-bs-target]="'#carousel-' + i" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,11 +118,30 @@
                                         }
                                     </div>
                                 </div>
+=======
+                                <button class="carousel-control-prev text-dark" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <i class="bi bi-caret-left-fill"></i>
+                                </button>
+                                <button class="carousel-control-next text-dark" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <i class="bi bi-caret-right-fill"></i>
+                                </button>
+                            </div>
+                            <div class="">
+                                <h5 class="card-title">{{ p.nombre }}</h5>
+                                <p class="card-text">{{ p.descripcion }}</p>
+                                <p class="card-text">Precio: ${{ p.precio }}</p>
+>>>>>>> ad4b14605c59deb741ba20463ef4e547f2a85a3b
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+<<<<<<< HEAD
                             <button type="button" class="btn btn-primary" (click)="agregarAlCarrito(p)">Agregar al carro</button>
+=======
+                            <button type="button" class="btn btn-success"><i class="bi bi-cart-plus-fill"></i></button>
+>>>>>>> ad4b14605c59deb741ba20463ef4e547f2a85a3b
                         </div>
                     </div>
                 </div>
